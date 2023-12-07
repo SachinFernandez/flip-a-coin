@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flip-a-coin/static/css/main.04d73782.css",
+    "main.js": "/flip-a-coin/static/js/main.5dd54efd.js",
+    "static/js/787.d306376a.chunk.js": "/flip-a-coin/static/js/787.d306376a.chunk.js",
+    "index.html": "/flip-a-coin/index.html",
+    "main.04d73782.css.map": "/flip-a-coin/static/css/main.04d73782.css.map",
+    "main.5dd54efd.js.map": "/flip-a-coin/static/js/main.5dd54efd.js.map",
+    "787.d306376a.chunk.js.map": "/flip-a-coin/static/js/787.d306376a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04d73782.css",
+    "static/js/main.5dd54efd.js"
+  ]
+}
