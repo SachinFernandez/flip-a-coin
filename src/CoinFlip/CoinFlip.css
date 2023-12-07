@@ -1,0 +1,97 @@
+/* src/CoinFlip.css */
+
+.coin-flip-container {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+   .coin {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+  } 
+  
+  .coin:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    background-color: #ffd700;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  } 
+  
+  .heads:before {
+    content: 'Heads';
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tails:before {
+    content: 'Tails';
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  .flip-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ 
+
+@keyframes flip {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(180deg);
+    }
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  
+  .coin {
+    /* ... (previous styles) */
+    animation: flip 1s ease-in-out;
+  }
+  
+  .heads:before,
+  .tails:before {
+    opacity: 1; 
+    transition: opacity 0.5s ease;
+  }
+   
+  .flipping .coin {
+    filter: blur(5px);
+    animation: none; /* Disable the flip animation during the blur effect */
+  }
+  
+  .flipping .heads:before,
+  .flipping .tails:before {
+    opacity: 1;
+  }
+  
